@@ -4,10 +4,10 @@ eachメソッドを使う %>
 <!--<%%>ブラウザ上では非表示
 <%=%>→ブラウザ上で表示させる-->
 
-<%= link_to '投稿ページ', '/posts/new'%>
-<%  @posts.each do  |post|  %>
-    <div>
-      <%= post.memo  %>
-      <%= post.created_at%>
-    </div>
+<%= link_to "投稿ページ", '/posts/new'%>
+<% @posts.each do |post|%>
+  <div>
+    <%= post.memo %>
+    <%= post.created_at %>
+  </div>
 <% end %>

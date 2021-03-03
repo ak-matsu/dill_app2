@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   #createアクションを定義
   def create
     #Postモデルの中にあるmemoカラムへparamsを使いデータを保存している。
-    Post.create(memo.params[:memo])
+    Post.create(memo: params[:memo])
   end
+
 end
