@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   #posts/newはposts#newである
   get 'posts/new', to: 'posts#new'
 
-  get 'posts', to: 'posts#create'
+  #投稿をするからpostメソッドが使われる。
+  post 'posts', to: 'posts#create'
 end

@@ -9,4 +9,9 @@ class PostsController < ApplicationController
   def new
   end
 
+  #createアクションを定義
+  def create
+    #Postモデルの中にあるmemoカラムへparamsを使いデータを保存している。
+    Post.create(memo.params[:memo])
+  end
 end
