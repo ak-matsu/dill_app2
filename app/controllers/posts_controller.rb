@@ -5,8 +5,8 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  #newアクションを定義
   def new
-    
   end
 
 end
