@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'posts', to: 'posts#index'
   #posts/newはposts#newである
   get 'posts/new', to: 'posts#new'
+
+  get 'posts', to: 'posts#create'
 end
