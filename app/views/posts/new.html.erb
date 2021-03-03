@@ -1,5 +1,8 @@
 <h1>新規投稿ページ</h1>
 
+<%# ここはindexより新規投稿するためボタンクリック後の、移動先のページ %>
+<%# urlオプションは当ページのパスをダブルクォーテーションつけて記載 %>
+
 <%= form_with url: "/posts/new", method: :post, local: true do |form| %>
   <%= form.text_field :memo %>
   <%= form.submit "投稿する" %>

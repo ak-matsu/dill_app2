@@ -4,7 +4,7 @@ eachメソッドを使う %>
 <!--<%%>ブラウザ上では非表示
 <%=%>→ブラウザ上で表示させる-->
 
-<%= link_to '新規投稿', '/posts/new'%>
+<%= link_to '投稿ページ', '/posts/new'%>
 <%  @posts.each do  |post|  %>
     <div>
       <%= post.memo  %>
